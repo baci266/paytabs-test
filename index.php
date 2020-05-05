@@ -1,1 +1,4 @@
-<?php include_once(“home.html”); ?>
+<?php 
+echo("Hello world");
+include_once(“home.html”);
+?>
