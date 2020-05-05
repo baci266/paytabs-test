@@ -6,30 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <script src="https://paytabs.com/express/v4/paytabs-express-checkout.js"></script>
-    <script type="text/javascript">
-        Paytabs.initWithIframe(document.body,{
-          settings: {
-            secret_key: "5P3mUkpNULulVUWEiyByWylikolxJV6OLabFvAspmXLiSHXagyId73vrsQYcM51ygcdLNGa9DWsvDpFTYo75sCxUtw7gB8OSk2D7",
-            merchant_id: "10059002",
-            url_redirect: "https://paytabs-test.herokuapp.com",
-            amount: "50.0",
-            title: "John Doe",
-            currency: "USD",
-            product_names: "test test",
-            order_id: "25",
-            ui_type: "iframe",
-            is_popup: "true",
-            ui_show_header: "true"
-          },
-           customer_info: {
-            first_name: "Ramy",
-            last_name: "Sabry",
-            phone_number: "123456",
-            email_address: "mail@example.com",
-            country_code: "973"
-          }
-        });
-    </script>
+    <script src="https://www.paytabs.com/express/v4/paytabs-express-checkout.js"
+   id="paytabs-express-checkout"
+   data-secret-key="merchant_secret_key"
+   data-merchant-id="merchant_id"
+   data-url-redirect="http://example.com/callback/"
+   data-amount="10.0"
+   data-currency="SAR"
+   data-title="John Doe"
+   data-product-names="Iphone"
+   data-order-id="25"
+   data-customer-phone-number="5486253"
+   data-customer-email-address="john.deo@paytabs.com"
+   data-customer-country-code="973"
+>
+</script>
   </body>
 </html>
