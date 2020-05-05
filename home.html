@@ -1,1 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Express Checkout(JS API)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script src="https://paytabs.com/express/v4/paytabs-express-checkout.js"></script>
+    <script type="text/javascript">
+        Paytabs.initWithIframe(document.body,{
+          settings: {
+            secret_key: "5P3mUkpNULulVUWEiyByWylikolxJV6OLabFvAspmXLiSHXagyId73vrsQYcM51ygcdLNGa9DWsvDpFTYo75sCxUtw7gB8OSk2D7",
+            merchant_id: "10059002",
+            url_redirect: "https://example.com",
+            amount: "50.0",
+            title: "John Doe",
+            currency: "USD",
+            product_names: "test test",
+            order_id: "25",
+            ui_type: "iframe",
+            is_popup: "true",
+            ui_show_header: "true"
+          }
+        });
+    </script>
+  </body>
+</html>
